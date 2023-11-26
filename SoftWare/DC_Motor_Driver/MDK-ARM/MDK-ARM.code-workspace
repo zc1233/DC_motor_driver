@@ -1,0 +1,17 @@
+{
+    "folders": [
+        {
+            "path": "."
+        }
+    ],
+    "settings": {
+        "EIDE.SourceTree.AutoSearchIncludePath": true,
+        "EIDE.SourceTree.AutoSearchObjFile": true,
+        "files.associations": {
+            "freertos.h": "c",
+            "include.h": "c",
+            "spi.h": "c"
+        }
+    },
+    "extensions": {}
+}

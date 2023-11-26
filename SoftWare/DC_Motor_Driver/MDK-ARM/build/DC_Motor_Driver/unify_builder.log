@@ -1,0 +1,406 @@
+[2023-11-21 10:24:58]	[done]
+	build successfully !
+
+[2023-11-21 10:31:01]	compilation failed at : "c:\Users\Administrator\Desktop\DC_motor_driver\SoftWare\User\init.c", exit code: 1
+command: 
+  "c:\Keil_v5\ARM\ARMCC\bin\armcc.exe" -c --apcs=interwork -I../../Core/Inc -I../../Drivers/STM32F1xx_HAL_Driver/Inc -I../../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../../Middlewares/Third_Party/FreeRTOS/Source/include -I../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../../Drivers/CMSIS/Include -I../../User -IRTE/_DC_Motor_Driver -DUSE_HAL_DRIVER -DSTM32F103xB --cpu Cortex-M3 --li --c99 -D__MICROLIB -O3 --split_sections --diag_suppress=1 --diag_suppress=1295 -g -o .\build\DC_Motor_Driver\__\__\User\init.o --no_depend_system_headers --depend .\build\DC_Motor_Driver\__\__\User\init.d .\..\..\User\init.c
+   at unify_builder.Program.compileByMulThread(Int32 thrNum, CmdInfo[] cmds_, List`1 errLogs)
+   at unify_builder.Program.Main(String[] args_)
+---
+".\..\..\User\include.h", line 6: Error:  #20: identifier "osTimerId" is undefined
+  extern osTimerId IDTimerHandle;
+         ^
+.\..\..\User\id_key.c: 0 warnings, 1 error
+".\..\..\User\include.h", line 6: Error:  #20: identifier "osTimerId" is undefined
+  extern osTimerId IDTimerHandle;
+         ^
+.\..\..\User\init.c: 0 warnings, 1 error
+
+[2023-11-21 18:45:49]	compilation failed at : "c:\Users\Administrator\Desktop\DC_motor_driver\SoftWare\Core\Src\freertos.c", exit code: 1
+command: 
+  "c:\Keil_v5\ARM\ARMCC\bin\armcc.exe" -c --apcs=interwork -I../../Core/Inc -I../../Drivers/STM32F1xx_HAL_Driver/Inc -I../../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../../Middlewares/Third_Party/FreeRTOS/Source/include -I../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../../Drivers/CMSIS/Include -I../../User -IRTE/_DC_Motor_Driver -DUSE_HAL_DRIVER -DSTM32F103xB --cpu Cortex-M3 --li --c99 -D__MICROLIB -O3 --split_sections --diag_suppress=1 --diag_suppress=1295 -g -o .\build\DC_Motor_Driver\__\__\Core\Src\freertos.o --no_depend_system_headers --depend .\build\DC_Motor_Driver\__\__\Core\Src\freertos.d .\..\..\Core\Src\freertos.c
+   at unify_builder.Program.compileByMulThread(Int32 thrNum, CmdInfo[] cmds_, List`1 errLogs)
+   at unify_builder.Program.Main(String[] args_)
+---
+".\..\..\Core\Src\freertos.c", line 135: Warning:  #223-D: function "init_all" declared implicitly
+    init_all();
+    ^
+".\..\..\Core\Src\freertos.c", line 160: Error:  #159: declaration is incompatible with previous "init_all"  (declared at line 135)
+  void init_all(void)
+       ^
+.\..\..\Core\Src\freertos.c: 1 warning, 1 error
+
+[2023-11-21 18:47:03]	link failed !, exit code: 1
+   at unify_builder.Program.Main(String[] args_)
+---
+Error: L6200E: Symbol id multiply defined (by id_key.o and freertos.o).
+Not enough information to list image symbols.
+Not enough information to list the image map.
+Finished: 2 information, 0 warning and 1 error messages.
+
+
+[2023-11-21 18:51:15]	link failed !, exit code: 1
+   at unify_builder.Program.Main(String[] args_)
+---
+Error: L6200E: Symbol id multiply defined (by id_key.o and freertos.o).
+Not enough information to list image symbols.
+Not enough information to list the image map.
+Finished: 2 information, 0 warning and 1 error messages.
+
+
+[2023-11-21 18:52:47]	[done]
+	build successfully !
+
+[2023-11-23 20:09:58]	[done]
+	build successfully !
+
+[2023-11-23 20:53:15]	[done]
+	build successfully !
+
+[2023-11-23 21:34:44]	compilation failed at : "c:\Users\Administrator\Desktop\DC_motor_driver\SoftWare\User\key_id.c", exit code: 1
+command: 
+  "c:\Keil_v5\ARM\ARMCC\bin\armcc.exe" -c --apcs=interwork -I../../Core/Inc -I../../Drivers/STM32F1xx_HAL_Driver/Inc -I../../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../../Middlewares/Third_Party/FreeRTOS/Source/include -I../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../../Drivers/CMSIS/Include -I../../User -IRTE/_DC_Motor_Driver -DUSE_HAL_DRIVER -DSTM32F103xB --cpu Cortex-M3 --li --c99 -D__MICROLIB -O3 --split_sections --diag_suppress=1 --diag_suppress=1295 -g -o .\build\DC_Motor_Driver\__\__\User\key_id.o --no_depend_system_headers --depend .\build\DC_Motor_Driver\__\__\User\key_id.d .\..\..\User\key_id.c
+   at unify_builder.Program.compileByMulThread(Int32 thrNum, CmdInfo[] cmds_, List`1 errLogs)
+   at unify_builder.Program.Main(String[] args_)
+---
+".\..\..\User\key_id.c", line 30: Warning:  #68-D: integer conversion resulted in a change of sign
+              i = -1;
+                  ^
+".\..\..\User\key_id.c", line 75: Error:  #20: identifier "FLASH_Status" is undefined
+  		FLASH_Status FLASHstatus = FLASH_COMPLETE;
+  		^
+".\..\..\User\key_id.c", line 75: Error:  #20: identifier "FLASH_COMPLETE" is undefined
+  		FLASH_Status FLASHstatus = FLASH_COMPLETE;
+  		                           ^
+".\..\..\User\key_id.c", line 76: Warning:  #223-D: function "FLASH_Unlock" declared implicitly
+  		FLASH_Unlock(); //解锁flash
+  		^
+".\..\..\User\key_id.c", line 78: Warning:  #223-D: function "FLASH_ClearFlag" declared implicitly
+  		FLASH_ClearFlag(FLASH_FLAG_BSY|FLASH_FLAG_EOP|FLASH_FLAG_PGERR|FLASH_FLAG_WRPRTERR);  //清除标志�?
+  		^
+".\..\..\User\key_id.c", line 78: Error:  #20: identifier "FLASH_FLAG_WRPRTERR" is undefined
+  		FLASH_ClearFlag(FLASH_FLAG_BSY|FLASH_FLAG_EOP|FLASH_FLAG_PGERR|FLASH_FLAG_WRPRTERR);  //清除标志�?
+  		                                                               ^
+".\..\..\User\key_id.c", line 80: Warning:  #223-D: function "FLASH_ErasePage" declared implicitly
+  		FLASHstatus=FLASH_ErasePage(addr);   //擦除指定地址�?
+  		            ^
+".\..\..\User\key_id.c", line 84: Warning:  #223-D: function "FLASH_ProgramHalfWord" declared implicitly
+  			FLASHstatus=FLASH_ProgramHalfWord(addr+i*4, flashdata1[i]);//从指定的地址写入数据
+  			            ^
+".\..\..\User\key_id.c", line 86: Warning:  #223-D: function "FLASH_Lock" declared implicitly
+  		FLASH_Lock();//上锁 
+  		^
+".\..\..\User\key_id.c", line 100: Warning:  #223-D: function "FLASH_Unlock" declared implicitly
+  	FLASH_Unlock();//解锁flash
+  	^
+".\..\..\User\key_id.c", line 104: Error:  #20: identifier "u16" is undefined
+  		buffer[i] = *(u16 *)(addr + i*4);    //读取flash地址中的�?
+  		              ^
+".\..\..\User\key_id.c", line 104: Error:  #29: expected an expression
+  		buffer[i] = *(u16 *)(addr + i*4);    //读取flash地址中的�?
+  		                   ^
+".\..\..\User\key_id.c", line 107: Warning:  #223-D: function "FLASH_Lock" declared implicitly
+  	FLASH_Lock();//上锁
+  	^
+".\..\..\User\key_id.c", line 98: Warning:  #177-D: variable "rdata"  was declared but never referenced
+  	uint64_t rdata = 0;
+  	         ^
+.\..\..\User\key_id.c: 9 warnings, 5 errors
+
+[2023-11-23 21:50:55]	link failed !, exit code: 1
+   at unify_builder.Program.Main(String[] args_)
+---
+Error: L6218E: Undefined symbol FLASH_Lock (referred from key_id.o).
+Error: L6218E: Undefined symbol FLASH_Unlock (referred from key_id.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 2 error messages.
+
+
+[2023-11-23 22:03:18]	link failed !, exit code: 1
+   at unify_builder.Program.Main(String[] args_)
+---
+Error: L6218E: Undefined symbol FLASH_Lock (referred from key_id.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 1 error messages.
+
+
+[2023-11-23 22:03:50]	[done]
+	build successfully !
+
+[2023-11-23 22:07:43]	[done]
+	build successfully !
+
+[2023-11-24 15:18:36]	[done]
+	build successfully !
+
+[2023-11-24 15:42:12]	[done]
+	build successfully !
+
+[2023-11-24 16:01:42]	[done]
+	build successfully !
+
+[2023-11-25 10:17:38]	[done]
+	build successfully !
+
+[2023-11-25 11:28:02]	[done]
+	build successfully !
+
+[2023-11-25 16:32:14]	compilation failed at : "c:\Users\Administrator\Desktop\DC_motor_driver\SoftWare\User\get_vel.c", exit code: 1
+command: 
+  "c:\Keil_v5\ARM\ARMCC\bin\armcc.exe" -c --apcs=interwork -I../../Core/Inc -I../../Drivers/STM32F1xx_HAL_Driver/Inc -I../../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../../Middlewares/Third_Party/FreeRTOS/Source/include -I../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../../Drivers/CMSIS/Include -I../../User -IRTE/_DC_Motor_Driver -DUSE_HAL_DRIVER -DSTM32F103xB --cpu Cortex-M3 --li --c99 -D__MICROLIB -O3 --split_sections --diag_suppress=1 --diag_suppress=1295 -g -o .\build\DC_Motor_Driver\__\__\User\get_vel.o --no_depend_system_headers --depend .\build\DC_Motor_Driver\__\__\User\get_vel.d .\..\..\User\get_vel.c
+   at unify_builder.Program.compileByMulThread(Int32 thrNum, CmdInfo[] cmds_, List`1 errLogs)
+   at unify_builder.Program.Main(String[] args_)
+---
+"../../User/motor_controller.h", line 26: Error:  #20: identifier "motor_controll_t" is undefined
+      motor_controll_t* father;
+      ^
+"../../User/motor_controller.h", line 38: Error:  #20: identifier "motor_t" is undefined
+      motor_t* father;
+      ^
+"../../User/motor_controller.h", line 39: Error:  #20: identifier "motor_controll_t" is undefined
+      void (*motor_controll_init)(motor_controll_t *motor_controll, float kp, float ki, float kd, float max_output, float maxIntegral, float deadband);
+                                  ^
+.\..\..\Core\Src\main.c: 0 warnings, 3 errors
+".\..\..\User\motor_controller.h", line 26: Error:  #20: identifier "motor_controll_t" is undefined
+      motor_controll_t* father;
+      ^
+".\..\..\User\motor_controller.h", line 38: Error:  #20: identifier "motor_t" is undefined
+      motor_t* father;
+      ^
+".\..\..\User\motor_controller.h", line 39: Error:  #20: identifier "motor_controll_t" is undefined
+      void (*motor_controll_init)(motor_controll_t *motor_controll, float kp, float ki, float kd, float max_output, float maxIntegral, float deadband);
+                                  ^
+".\..\..\User\get_vel.c", line 38: Warning:  #188-D: enumerated type mixed with another type
+    SPICS(0);
+    ^
+".\..\..\User\get_vel.c", line 40: Warning:  #188-D: enumerated type mixed with another type
+    SPICS(1);
+    ^
+".\..\..\User\get_vel.c", line 41: Warning:  #188-D: enumerated type mixed with another type
+    SPICS(0);
+    ^
+".\..\..\User\get_vel.c", line 43: Warning:  #188-D: enumerated type mixed with another type
+    SPICS(1);
+    ^
+.\..\..\User\get_vel.c: 4 warnings, 3 errors
+
+[2023-11-25 16:44:33]	compilation failed at : "c:\Users\Administrator\Desktop\DC_motor_driver\SoftWare\User\get_vel.c", exit code: 1
+command: 
+  "c:\Keil_v5\ARM\ARMCC\bin\armcc.exe" -c --apcs=interwork -I../../Core/Inc -I../../Drivers/STM32F1xx_HAL_Driver/Inc -I../../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../../Middlewares/Third_Party/FreeRTOS/Source/include -I../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../../Drivers/CMSIS/Include -I../../User -IRTE/_DC_Motor_Driver -DUSE_HAL_DRIVER -DSTM32F103xB --cpu Cortex-M3 --li --c99 -D__MICROLIB -O3 --split_sections --diag_suppress=1 --diag_suppress=1295 -g -o .\build\DC_Motor_Driver\__\__\User\get_vel.o --no_depend_system_headers --depend .\build\DC_Motor_Driver\__\__\User\get_vel.d .\..\..\User\get_vel.c
+   at unify_builder.Program.compileByMulThread(Int32 thrNum, CmdInfo[] cmds_, List`1 errLogs)
+   at unify_builder.Program.Main(String[] args_)
+---
+"../../User/motor_controller.h", line 42: Error:  #20: identifier "motor_controll_t" is undefined
+      void (*motor_controll_init)(motor_controll_t *motor_controll, float kp, float ki, float kd, float max_output, float maxIntegral, float deadband);
+                                  ^
+.\..\..\Core\Src\main.c: 0 warnings, 1 error
+".\..\..\User\motor_controller.h", line 42: Error:  #20: identifier "motor_controll_t" is undefined
+      void (*motor_controll_init)(motor_controll_t *motor_controll, float kp, float ki, float kd, float max_output, float maxIntegral, float deadband);
+                                  ^
+".\..\..\User\get_vel.c", line 36: Warning:  #188-D: enumerated type mixed with another type
+    SPICS(0);
+    ^
+".\..\..\User\get_vel.c", line 38: Warning:  #188-D: enumerated type mixed with another type
+    SPICS(1);
+    ^
+".\..\..\User\get_vel.c", line 39: Warning:  #188-D: enumerated type mixed with another type
+    SPICS(0);
+    ^
+".\..\..\User\get_vel.c", line 41: Warning:  #188-D: enumerated type mixed with another type
+    SPICS(1);
+    ^
+.\..\..\User\get_vel.c: 4 warnings, 1 error
+
+[2023-11-25 16:45:52]	[done]
+	build successfully !
+
+[2023-11-25 16:47:03]	[done]
+	build successfully !
+
+[2023-11-25 16:48:21]	[done]
+	build successfully !
+
+[2023-11-25 17:03:00]	[done]
+	build successfully !
+
+[2023-11-25 17:13:14]	compilation failed at : "c:\Users\Administrator\Desktop\DC_motor_driver\SoftWare\Core\Src\main.c", exit code: 1
+command: 
+  "c:\Keil_v5\ARM\ARMCC\bin\armcc.exe" -c --apcs=interwork -I../../Core/Inc -I../../Drivers/STM32F1xx_HAL_Driver/Inc -I../../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../../Middlewares/Third_Party/FreeRTOS/Source/include -I../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../../Drivers/CMSIS/Include -I../../User -IRTE/_DC_Motor_Driver -DUSE_HAL_DRIVER -DSTM32F103xB --cpu Cortex-M3 --li --c99 -D__MICROLIB -O3 --split_sections --diag_suppress=1 --diag_suppress=1295 -g -o .\build\DC_Motor_Driver\__\__\Core\Src\main.o --no_depend_system_headers --depend .\build\DC_Motor_Driver\__\__\Core\Src\main.d .\..\..\Core\Src\main.c
+   at unify_builder.Program.compileByMulThread(Int32 thrNum, CmdInfo[] cmds_, List`1 errLogs)
+   at unify_builder.Program.Main(String[] args_)
+---
+"../../User/motor_controller.h", line 27: Error:  #260-D: explicit type is missing ("int" assumed)
+  typedef pid_realize_t void (* )(pid_t *pid);
+          ^
+"../../User/motor_controller.h", line 27: Error:  #65: expected a ";"
+  typedef pid_realize_t void (* )(pid_t *pid);
+                        ^
+.\..\..\Core\Src\main.c: 0 warnings, 2 errors
+
+[2023-11-25 17:13:42]	compilation failed at : "c:\Users\Administrator\Desktop\DC_motor_driver\SoftWare\User\get_vel.c", exit code: 1
+command: 
+  "c:\Keil_v5\ARM\ARMCC\bin\armcc.exe" -c --apcs=interwork -I../../Core/Inc -I../../Drivers/STM32F1xx_HAL_Driver/Inc -I../../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../../Middlewares/Third_Party/FreeRTOS/Source/include -I../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../../Drivers/CMSIS/Include -I../../User -IRTE/_DC_Motor_Driver -DUSE_HAL_DRIVER -DSTM32F103xB --cpu Cortex-M3 --li --c99 -D__MICROLIB -O3 --split_sections --diag_suppress=1 --diag_suppress=1295 -g -o .\build\DC_Motor_Driver\__\__\User\get_vel.o --no_depend_system_headers --depend .\build\DC_Motor_Driver\__\__\User\get_vel.d .\..\..\User\get_vel.c
+   at unify_builder.Program.compileByMulThread(Int32 thrNum, CmdInfo[] cmds_, List`1 errLogs)
+   at unify_builder.Program.Main(String[] args_)
+---
+"../../User/motor_controller.h", line 27: Error:  #260-D: explicit type is missing ("int" assumed)
+  typedef pid_realize_t void (* )(pid_t *pid);
+          ^
+"../../User/motor_controller.h", line 27: Error:  #65: expected a ";"
+  typedef pid_realize_t void (* )(pid_t *pid);
+                        ^
+.\..\..\Core\Src\main.c: 0 warnings, 2 errors
+".\..\..\User\motor_controller.h", line 27: Error:  #260-D: explicit type is missing ("int" assumed)
+  typedef pid_realize_t void (* )(pid_t *pid);
+          ^
+".\..\..\User\motor_controller.h", line 27: Error:  #65: expected a ";"
+  typedef pid_realize_t void (* )(pid_t *pid);
+                        ^
+".\..\..\User\get_vel.c", line 36: Warning:  #188-D: enumerated type mixed with another type
+    SPICS(0);
+    ^
+".\..\..\User\get_vel.c", line 38: Warning:  #188-D: enumerated type mixed with another type
+    SPICS(1);
+    ^
+".\..\..\User\get_vel.c", line 39: Warning:  #188-D: enumerated type mixed with another type
+    SPICS(0);
+    ^
+".\..\..\User\get_vel.c", line 41: Warning:  #188-D: enumerated type mixed with another type
+    SPICS(1);
+    ^
+.\..\..\User\get_vel.c: 4 warnings, 2 errors
+
+[2023-11-25 17:16:24]	[done]
+	build successfully !
+
+[2023-11-25 17:50:49]	compilation failed at : "c:\Users\Administrator\Desktop\DC_motor_driver\SoftWare\User\motor_controller.c", exit code: 1
+command: 
+  "c:\Keil_v5\ARM\ARMCC\bin\armcc.exe" -c --apcs=interwork -I../../Core/Inc -I../../Drivers/STM32F1xx_HAL_Driver/Inc -I../../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../../Middlewares/Third_Party/FreeRTOS/Source/include -I../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../../Drivers/CMSIS/Include -I../../User -IRTE/_DC_Motor_Driver -DUSE_HAL_DRIVER -DSTM32F103xB --cpu Cortex-M3 --li --c99 -D__MICROLIB -O3 --split_sections --diag_suppress=1 --diag_suppress=1295 -g -o .\build\DC_Motor_Driver\__\__\User\motor_controller.o --no_depend_system_headers --depend .\build\DC_Motor_Driver\__\__\User\motor_controller.d .\..\..\User\motor_controller.c
+   at unify_builder.Program.compileByMulThread(Int32 thrNum, CmdInfo[] cmds_, List`1 errLogs)
+   at unify_builder.Program.Main(String[] args_)
+---
+".\..\..\User\motor_controller.c", line 13: Error:  #28: expression must have a constant value
+      .speed_controller = speed_controller,
+                          ^
+".\..\..\User\motor_controller.c", line 14: Error:  #28: expression must have a constant value
+      .angle_controller = angle_controller
+                          ^
+".\..\..\User\motor_controller.c", line 108: Error:  #167: argument of type "void (*)(pid_t *)" is incompatible with parameter of type "float"
+      motor_controll_init(&motor.speed_controller, 0.5f, 0.0f, 0.0f, 1000.0f, 1000.0f, 0.1f, speed_pid_realize);
+                                                                                             ^
+".\..\..\User\motor_controller.c", line 108: Error:  #165: too few arguments in function call
+      motor_controll_init(&motor.speed_controller, 0.5f, 0.0f, 0.0f, 1000.0f, 1000.0f, 0.1f, speed_pid_realize);
+                                                                                                              ^
+".\..\..\User\motor_controller.c", line 109: Error:  #167: argument of type "void (*)(pid_t *)" is incompatible with parameter of type "float"
+      motor_controll_init(&motor.angle_controller, 0.5f, 0.0f, 0.0f, 1000.0f, 1000.0f, 0.1f, angle_pid_realize);
+                                                                                             ^
+".\..\..\User\motor_controller.c", line 109: Error:  #165: too few arguments in function call
+      motor_controll_init(&motor.angle_controller, 0.5f, 0.0f, 0.0f, 1000.0f, 1000.0f, 0.1f, angle_pid_realize);
+                                                                                                              ^
+.\..\..\User\motor_controller.c: 0 warnings, 6 errors
+
+[2023-11-25 17:52:47]	link failed !, exit code: 1
+   at unify_builder.Program.Main(String[] args_)
+---
+Error: L6218E: Undefined symbol motor (referred from motor_controller.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 1 error messages.
+
+
+[2023-11-25 17:53:43]	[done]
+	build successfully !
+
+[2023-11-25 17:54:17]	[done]
+	build successfully !
+
+[2023-11-25 17:59:15]	compilation failed at : "c:\Users\Administrator\Desktop\DC_motor_driver\SoftWare\User\motor_controller.c", exit code: 1
+command: 
+  "c:\Keil_v5\ARM\ARMCC\bin\armcc.exe" -c --apcs=interwork -I../../Core/Inc -I../../Drivers/STM32F1xx_HAL_Driver/Inc -I../../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../../Middlewares/Third_Party/FreeRTOS/Source/include -I../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../../Drivers/CMSIS/Include -I../../User -IRTE/_DC_Motor_Driver -DUSE_HAL_DRIVER -DSTM32F103xB --cpu Cortex-M3 --li --c99 -D__MICROLIB -O3 --split_sections --diag_suppress=1 --diag_suppress=1295 -g -o .\build\DC_Motor_Driver\__\__\User\motor_controller.o --no_depend_system_headers --depend .\build\DC_Motor_Driver\__\__\User\motor_controller.d .\..\..\User\motor_controller.c
+   at unify_builder.Program.compileByMulThread(Int32 thrNum, CmdInfo[] cmds_, List`1 errLogs)
+   at unify_builder.Program.Main(String[] args_)
+---
+".\..\..\User\motor_controller.c", line 117: Error:  #65: expected a ";"
+      {
+      ^
+".\..\..\User\motor_controller.c", line 121: Warning:  #12-D: parsing restarts here after previous syntax error
+  }
+  ^
+.\..\..\User\motor_controller.c: 1 warning, 1 error
+
+[2023-11-25 17:59:54]	compilation failed at : "c:\Users\Administrator\Desktop\DC_motor_driver\SoftWare\User\motor_controller.c", exit code: 1
+command: 
+  "c:\Keil_v5\ARM\ARMCC\bin\armcc.exe" -c --apcs=interwork -I../../Core/Inc -I../../Drivers/STM32F1xx_HAL_Driver/Inc -I../../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../../Middlewares/Third_Party/FreeRTOS/Source/include -I../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../../Drivers/CMSIS/Include -I../../User -IRTE/_DC_Motor_Driver -DUSE_HAL_DRIVER -DSTM32F103xB --cpu Cortex-M3 --li --c99 -D__MICROLIB -O3 --split_sections --diag_suppress=1 --diag_suppress=1295 -g -o .\build\DC_Motor_Driver\__\__\User\motor_controller.o --no_depend_system_headers --depend .\build\DC_Motor_Driver\__\__\User\motor_controller.d .\..\..\User\motor_controller.c
+   at unify_builder.Program.compileByMulThread(Int32 thrNum, CmdInfo[] cmds_, List`1 errLogs)
+   at unify_builder.Program.Main(String[] args_)
+---
+".\..\..\User\motor_controller.c", line 117: Error:  #65: expected a ";"
+      {
+      ^
+".\..\..\User\motor_controller.c", line 121: Warning:  #12-D: parsing restarts here after previous syntax error
+  }
+  ^
+.\..\..\User\motor_controller.c: 1 warning, 1 error
+
+[2023-11-25 18:00:53]	[done]
+	build successfully !
+
+[2023-11-25 18:49:26]	compilation failed at : "c:\Users\Administrator\Desktop\DC_motor_driver\SoftWare\User\motor_controller.c", exit code: 1
+command: 
+  "c:\Keil_v5\ARM\ARMCC\bin\armcc.exe" -c --apcs=interwork -I../../Core/Inc -I../../Drivers/STM32F1xx_HAL_Driver/Inc -I../../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../../Middlewares/Third_Party/FreeRTOS/Source/include -I../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../../Drivers/CMSIS/Include -I../../User -IRTE/_DC_Motor_Driver -DUSE_HAL_DRIVER -DSTM32F103xB --cpu Cortex-M3 --li --c99 -D__MICROLIB -O3 --split_sections --diag_suppress=1 --diag_suppress=1295 -g -o .\build\DC_Motor_Driver\__\__\User\motor_controller.o --no_depend_system_headers --depend .\build\DC_Motor_Driver\__\__\User\motor_controller.d .\..\..\User\motor_controller.c
+   at unify_builder.Program.compileByMulThread(Int32 thrNum, CmdInfo[] cmds_, List`1 errLogs)
+   at unify_builder.Program.Main(String[] args_)
+---
+".\..\..\User\motor_controller.c", line 44: Error:  #20: identifier "pid_output" is undefined
+      pid->pid_output = pid_output;
+                        ^
+.\..\..\User\motor_controller.c: 0 warnings, 1 error
+
+[2023-11-25 18:49:46]	[done]
+	build successfully !
+
+[2023-11-25 18:54:58]	[done]
+	build successfully !
+
+[2023-11-25 19:07:40]	[done]
+	build successfully !
+
+[2023-11-25 19:21:33]	[done]
+	build successfully !
+
+[2023-11-25 20:11:31]	[done]
+	build successfully !
+
+[2023-11-25 22:13:31]	compilation failed at : "c:\Users\Administrator\Desktop\DC_motor_driver\SoftWare\User\motor_controller.c", exit code: 1
+command: 
+  "c:\Keil_v5\ARM\ARMCC\bin\armcc.exe" -c --apcs=interwork -I../../Core/Inc -I../../Drivers/STM32F1xx_HAL_Driver/Inc -I../../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../../Middlewares/Third_Party/FreeRTOS/Source/include -I../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../../Drivers/CMSIS/Include -I../../User -IRTE/_DC_Motor_Driver -DUSE_HAL_DRIVER -DSTM32F103xB --cpu Cortex-M3 --li --c99 -D__MICROLIB -O3 --split_sections --diag_suppress=1 --diag_suppress=1295 -g -o .\build\DC_Motor_Driver\__\__\User\motor_controller.o --no_depend_system_headers --depend .\build\DC_Motor_Driver\__\__\User\motor_controller.d .\..\..\User\motor_controller.c
+   at unify_builder.Program.compileByMulThread(Int32 thrNum, CmdInfo[] cmds_, List`1 errLogs)
+   at unify_builder.Program.Main(String[] args_)
+---
+".\..\..\User\motor_controller.c", line 21: Error:  #136: struct "motor_controll"  has no field "current_undecelerated"
+      motor_controll->current_undecelerated = 0;
+                      ^
+.\..\..\User\motor_controller.c: 0 warnings, 1 error
+
+[2023-11-25 22:14:01]	[done]
+	build successfully !
+
+[2023-11-25 22:33:39]	compilation failed at : "c:\Users\Administrator\Desktop\DC_motor_driver\SoftWare\User\communication.c", exit code: 1
+command: 
+  "c:\Keil_v5\ARM\ARMCC\bin\armcc.exe" -c --apcs=interwork -I../../Core/Inc -I../../Drivers/STM32F1xx_HAL_Driver/Inc -I../../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../../Middlewares/Third_Party/FreeRTOS/Source/include -I../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../../Drivers/CMSIS/Include -I../../User -IRTE/_DC_Motor_Driver -DUSE_HAL_DRIVER -DSTM32F103xB --cpu Cortex-M3 --li --c99 -D__MICROLIB -O3 --split_sections --diag_suppress=1 --diag_suppress=1295 -g -o .\build\DC_Motor_Driver\__\__\User\communication.o --no_depend_system_headers --depend .\build\DC_Motor_Driver\__\__\User\communication.d .\..\..\User\communication.c
+   at unify_builder.Program.compileByMulThread(Int32 thrNum, CmdInfo[] cmds_, List`1 errLogs)
+   at unify_builder.Program.Main(String[] args_)
+---
+".\..\..\User\communication.c", line 59: Error:  #167: argument of type "CAN_TxHeaderTypeDef **" is incompatible with parameter of type "const CAN_TxHeaderTypeDef *"
+      if (HAL_CAN_AddTxMessage(&hcan, &TxHeader, aData, &TxMailBox) != HAL_OK)//判断是否发送成�?
+                                      ^
+.\..\..\User\communication.c: 0 warnings, 1 error
+
+[2023-11-25 22:33:58]	[done]
+	build successfully !
+
+[2023-11-26 11:08:12]	[done]
+	build successfully !
+
+[2023-11-26 11:10:49]	[done]
+	build successfully !
+

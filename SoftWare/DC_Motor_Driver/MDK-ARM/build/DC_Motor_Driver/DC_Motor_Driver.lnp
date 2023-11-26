@@ -1,0 +1,43 @@
+--cpu Cortex-M3 --library_type=microlib --scatter "c:/Users/Administrator/Desktop/DC_motor_driver/SoftWare/DC_Motor_Driver/MDK-ARM/build/DC_Motor_Driver/DC_Motor_Driver.sct" --strict --summary_stderr --info summarysizes --map --xref --callgraph --symbols --info sizes --info totals --info unused --info veneers
+--list .\build\DC_Motor_Driver\DC_Motor_Driver.map
+.\build\DC_Motor_Driver\__\__\Core\Src\can.o
+.\build\DC_Motor_Driver\__\__\Core\Src\freertos.o
+.\build\DC_Motor_Driver\__\__\Core\Src\gpio.o
+.\build\DC_Motor_Driver\__\__\Core\Src\main.o
+.\build\DC_Motor_Driver\__\__\Core\Src\spi.o
+.\build\DC_Motor_Driver\__\__\Core\Src\stm32f1xx_hal_msp.o
+.\build\DC_Motor_Driver\__\__\Core\Src\stm32f1xx_hal_timebase_tim.o
+.\build\DC_Motor_Driver\__\__\Core\Src\stm32f1xx_it.o
+.\build\DC_Motor_Driver\__\__\Core\Src\system_stm32f1xx.o
+.\build\DC_Motor_Driver\__\__\Core\Src\tim.o
+.\build\DC_Motor_Driver\__\__\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal.o
+.\build\DC_Motor_Driver\__\__\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_can.o
+.\build\DC_Motor_Driver\__\__\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_cortex.o
+.\build\DC_Motor_Driver\__\__\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_dma.o
+.\build\DC_Motor_Driver\__\__\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_exti.o
+.\build\DC_Motor_Driver\__\__\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash.o
+.\build\DC_Motor_Driver\__\__\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash_ex.o
+.\build\DC_Motor_Driver\__\__\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio.o
+.\build\DC_Motor_Driver\__\__\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio_ex.o
+.\build\DC_Motor_Driver\__\__\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pwr.o
+.\build\DC_Motor_Driver\__\__\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc.o
+.\build\DC_Motor_Driver\__\__\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc_ex.o
+.\build\DC_Motor_Driver\__\__\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_spi.o
+.\build\DC_Motor_Driver\__\__\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim.o
+.\build\DC_Motor_Driver\__\__\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim_ex.o
+.\build\DC_Motor_Driver\__\__\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS\cmsis_os.o
+.\build\DC_Motor_Driver\__\__\Middlewares\Third_Party\FreeRTOS\Source\croutine.o
+.\build\DC_Motor_Driver\__\__\Middlewares\Third_Party\FreeRTOS\Source\event_groups.o
+.\build\DC_Motor_Driver\__\__\Middlewares\Third_Party\FreeRTOS\Source\list.o
+.\build\DC_Motor_Driver\__\__\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang\heap_4.o
+.\build\DC_Motor_Driver\__\__\Middlewares\Third_Party\FreeRTOS\Source\portable\RVDS\ARM_CM3\port.o
+.\build\DC_Motor_Driver\__\__\Middlewares\Third_Party\FreeRTOS\Source\queue.o
+.\build\DC_Motor_Driver\__\__\Middlewares\Third_Party\FreeRTOS\Source\stream_buffer.o
+.\build\DC_Motor_Driver\__\__\Middlewares\Third_Party\FreeRTOS\Source\tasks.o
+.\build\DC_Motor_Driver\__\__\Middlewares\Third_Party\FreeRTOS\Source\timers.o
+.\build\DC_Motor_Driver\__\__\User\communication.o
+.\build\DC_Motor_Driver\__\__\User\get_vel.o
+.\build\DC_Motor_Driver\__\__\User\key_id.o
+.\build\DC_Motor_Driver\__\__\User\motor_controller.o
+.\build\DC_Motor_Driver\__\__\User\motor_update.o
+.\build\DC_Motor_Driver\startup_stm32f103xb.o -o .\build\DC_Motor_Driver\DC_Motor_Driver.axf
