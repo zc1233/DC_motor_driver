@@ -10,7 +10,8 @@
         "files.associations": {
             "freertos.h": "c",
             "include.h": "c",
-            "spi.h": "c"
+            "spi.h": "c",
+            "motor_update.h": "c"
         }
     },
     "extensions": {}

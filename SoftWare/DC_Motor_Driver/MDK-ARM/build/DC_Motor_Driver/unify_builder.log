@@ -404,3 +404,32 @@ command:
 [2023-11-26 11:10:49]	[done]
 	build successfully !
 
+[2023-11-26 17:16:55]	[done]
+	build successfully !
+
+[2023-11-26 17:24:31]	[done]
+	build successfully !
+
+[2023-11-26 17:25:58]	[done]
+	build successfully !
+
+[2023-11-26 22:53:20]	[done]
+	build successfully !
+
+[2023-11-27 22:35:40]	compilation failed at : "c:\Users\Administrator\Desktop\DC_motor_driver\SoftWare\User\motor_controller.c", exit code: 1
+command: 
+  "c:\Keil_v5\ARM\ARMCC\bin\armcc.exe" -c --apcs=interwork -I../../Core/Inc -I../../Drivers/STM32F1xx_HAL_Driver/Inc -I../../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../../Middlewares/Third_Party/FreeRTOS/Source/include -I../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../../Drivers/CMSIS/Include -I../../User -IRTE/_DC_Motor_Driver -DUSE_HAL_DRIVER -DSTM32F103xB --cpu Cortex-M3 --li --c99 -D__MICROLIB -O3 --split_sections --diag_suppress=1 --diag_suppress=1295 -g -o .\build\DC_Motor_Driver\__\__\User\motor_controller.o --no_depend_system_headers --depend .\build\DC_Motor_Driver\__\__\User\motor_controller.d .\..\..\User\motor_controller.c
+   at unify_builder.Program.compileByMulThread(Int32 thrNum, CmdInfo[] cmds_, List`1 errLogs)
+   at unify_builder.Program.Main(String[] args_)
+---
+".\..\..\User\motor_controller.c", line 27: Warning:  #223-D: function "pid_init" declared implicitly
+      pid_init(&motor_controll->pid, kp, ki, kd, max_output, maxIntegral, deadband);
+      ^
+".\..\..\User\motor_controller.c", line 60: Error:  #159: declaration is incompatible with previous "pid_init"  (declared at line 27)
+  void pid_init(pid_t *pid, float kp, float ki, float kd, float max_output, float maxIntegral, float deadband)
+       ^
+.\..\..\User\motor_controller.c: 1 warning, 1 error
+
+[2023-11-27 22:36:40]	[done]
+	build successfully !
+

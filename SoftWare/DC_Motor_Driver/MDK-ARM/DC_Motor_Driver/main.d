@@ -47,3 +47,4 @@ dc_motor_driver\main.o: ../../Core/Inc/can.h
 dc_motor_driver\main.o: ../../Core/Inc/spi.h
 dc_motor_driver\main.o: ../../Core/Inc/tim.h
 dc_motor_driver\main.o: ../../Core/Inc/gpio.h
+dc_motor_driver\main.o: ../../User/motor_controller.h

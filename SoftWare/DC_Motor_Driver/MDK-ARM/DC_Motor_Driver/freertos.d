@@ -43,4 +43,9 @@ dc_motor_driver\freertos.o: ../../Middlewares/Third_Party/FreeRTOS/Source/includ
 dc_motor_driver\freertos.o: ../../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h
 dc_motor_driver\freertos.o: ../../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h
 dc_motor_driver\freertos.o: ../../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h
-dc_motor_driver\freertos.o: ..\..\User\include.h
+dc_motor_driver\freertos.o: ../../User/key_id.h
+dc_motor_driver\freertos.o: ../../User/motor_controller.h
+dc_motor_driver\freertos.o: ../../Core/Inc/tim.h
+dc_motor_driver\freertos.o: ../../User/communication.h
+dc_motor_driver\freertos.o: ../../Core/Inc/can.h
+dc_motor_driver\freertos.o: ../../User/motor_controller.h

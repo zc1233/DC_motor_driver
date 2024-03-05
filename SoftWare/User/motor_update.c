@@ -1,6 +1,5 @@
 #include "motor_update.h"
 #include <gpio.h>
-#include <cmsis_os.h>
 
 uint8_t error_flag = 0;
 
@@ -20,10 +19,12 @@ void Error_LED(void const * argument)
 
 void Motor_Update(void const * argument)
 {
-    motor_t *motor = (motor_t *)argument;
-    while (1)
-    {
-        motor->motor_update(motor);
-        osDelay(2);
-    }
+	osTimerStart(IDTimerHandle, 500);
+  osTimerStart(Error_TimerHandle, 500);
+	motor_t *motor = (motor_t *)argument;
+	while (1)
+	{
+			motor->motor_update(motor);
+			osDelay(2);
+	}
 }

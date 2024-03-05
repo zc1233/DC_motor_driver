@@ -12,6 +12,8 @@
 
 uint16_t AS5047_read(void);
 
+uint8_t key = 0;
+
 void TIM3_NVIC_Callback()
 {
   static uint16_t angle = 0, last_angle = 0;
@@ -27,6 +29,7 @@ void TIM3_NVIC_Callback()
   
   motor.angle_controller.current += diff_angle;
   motor.speed_controller.current = diff_angle * 1000;
+	key = HAL_GPIO_ReadPin(KEY_GPIO_Port, KEY_Pin);
 }
 
 uint16_t AS5047_read(void)

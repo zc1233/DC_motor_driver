@@ -1,12 +1,5 @@
 >>> cc
 
-".\..\..\User\key_id.c", line 26: Warning:  #68-D: integer conversion resulted in a change of sign
-              i = -1;
-                  ^
-".\..\..\User\key_id.c", line 33: Warning:  #68-D: integer conversion resulted in a change of sign
-              i = -1;
-                  ^
-.\..\..\User\key_id.c: 2 warnings, 0 errors
 ".\..\..\User\get_vel.c", line 37: Warning:  #188-D: enumerated type mixed with another type
     SPICS(0);
     ^
@@ -20,6 +13,13 @@
     SPICS(1);
     ^
 .\..\..\User\get_vel.c: 4 warnings, 0 errors
+".\..\..\User\key_id.c", line 26: Warning:  #68-D: integer conversion resulted in a change of sign
+              i = -1;
+                  ^
+".\..\..\User\key_id.c", line 33: Warning:  #68-D: integer conversion resulted in a change of sign
+              i = -1;
+                  ^
+.\..\..\User\key_id.c: 2 warnings, 0 errors
 ".\..\..\User\motor_update.c", line 16: Warning:  #68-D: integer conversion resulted in a change of sign
           i = -1;
               ^
@@ -27,4 +27,4 @@
 
 >>> ld
 
-Program Size: Code=16748 RO-data=408 RW-data=204 ZI-data=6548  
+Program Size: Code=17572 RO-data=408 RW-data=204 ZI-data=6492  

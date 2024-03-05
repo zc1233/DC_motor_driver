@@ -32,3 +32,5 @@
 .\build\DC_Motor_Driver\__\__\User\communication.o: .\..\..\User\motor_controller.h
 .\build\DC_Motor_Driver\__\__\User\communication.o: ../../Core/Inc/tim.h
 .\build\DC_Motor_Driver\__\__\User\communication.o: .\..\..\User\key_id.h
+.\build\DC_Motor_Driver\__\__\User\communication.o: .\..\..\User\motor_update.h
+.\build\DC_Motor_Driver\__\__\User\communication.o: .\..\..\User\motor_controller.h

@@ -35,7 +35,11 @@
 "dc_motor_driver\cmsis_os.o"
 "dc_motor_driver\heap_4.o"
 "dc_motor_driver\port.o"
-"dc_motor_driver\id_key.o"
+"dc_motor_driver\communication.o"
+"dc_motor_driver\get_vel.o"
+"dc_motor_driver\key_id.o"
+"dc_motor_driver\motor_controller.o"
+"dc_motor_driver\motor_update.o"
 --strict --scatter "DC_Motor_Driver\DC_Motor_Driver.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

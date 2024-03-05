@@ -143,7 +143,7 @@ void MX_FREERTOS_Init(void) {
 
   /* definition and creation of Pid_Task */
   osThreadDef(Pid_Task, Motor_Update, osPriorityAboveNormal, 0, 256);
-  Pid_TaskHandle = osThreadCreate(osThread(Pid_Task), &motor);
+  Pid_TaskHandle = osThreadCreate(osThread(Pid_Task), (void*) &motor);
 
   /* USER CODE BEGIN RTOS_THREADS */
   /* add threads, ... */
@@ -180,18 +180,17 @@ void init_all(void)
   HAL_TIM_PWM_Start(&htim2, TIM_CHANNEL_4);
 
   /*  timerIT for speed  */
-  HAL_TIM_Base_Start_IT(&htim3);
+  //HAL_TIM_Base_Start_IT(&htim3);
 
   /*  CAN  */
   ID_init();
-  CAN_Filter_configure(ID);
+  //CAN_Filter_configure(ID);
 
   /*  电机控制相关结构体初始化  */
-  motor.motor_init(&motor);
+  motor_init(&motor);
 
   /*  soft timer  */
-  osTimerStart(IDTimerHandle, 500);
-  osTimerStart(Error_TimerHandle, 500);
+
 }
 /* USER CODE END Application */
 
